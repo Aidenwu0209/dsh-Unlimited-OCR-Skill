@@ -31,6 +31,38 @@ npx @deepseek-ai/dsh web
 
 GUI 会直接链接所有官方配置页。远程地址必须使用 HTTPS；只有回环地址可使用 HTTP。
 
+## 在 DSH 之外使用内置 Skill
+
+仓库同时把 `unlimited-ocr-document-parsing` 暴露为标准 Agent Skill。非 DSH 客户端可以获得 OCR 工作流和脚本，但不会获得仅限 DSH 的 GUI 与原生 Tool。
+
+```bash
+npx skills add Aidenwu0209/dsh-Unlimited-OCR-Skill \
+  --skill unlimited-ocr-document-parsing -g
+```
+
+OpenClaw 克隆后安装：
+
+```bash
+openclaw skills install \
+  ./dsh-Unlimited-OCR-Skill/skills/unlimited-ocr-document-parsing \
+  --as unlimited-ocr-document-parsing
+```
+
+也可以从 ClawHub 安装体积更小的标准版本：
+
+```bash
+openclaw skills install @Aidenwu0209/unlimited-ocr-document-parsing
+```
+
+Claude Code 安装：
+
+```bash
+claude plugin marketplace add Aidenwu0209/dsh-Unlimited-OCR-Skill
+claude plugin install dsh-unlimited-ocr-skill@aidenwu-dsh-skills
+```
+
+如果不需要 DSH，推荐使用体积更小的 [Unlimited-OCR-Skill](https://github.com/Aidenwu0209/Unlimited-OCR-Skill)。完整平台矩阵见 [DISTRIBUTION.md](DISTRIBUTION.md)。
+
 ## 数据边界
 
 百度模式会把所选本地文件或 URL 发送到百度智能云。本地模式会把文件内容发送到已配置服务；如果配置的是远程 HTTPS 地址，它仍然会离开本机。不要处理不允许外传的数据。OCR 内容是不可信数据，不能当作 Agent 指令执行。
@@ -47,5 +79,4 @@ python3 -m compileall -q skills
 pnpm pack --dry-run
 ```
 
-来源与改造说明见 [UPSTREAM.md](UPSTREAM.md)，许可证见 [LICENSE](LICENSE)。
-
+来源与改造说明见 [UPSTREAM.md](UPSTREAM.md)。DSH 插件主体使用 [Apache-2.0](LICENSE)，其中可独立分发的 Skill 子目录使用 [MIT-0](skills/unlimited-ocr-document-parsing/LICENSE)。

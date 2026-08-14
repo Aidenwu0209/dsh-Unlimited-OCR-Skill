@@ -5,5 +5,4 @@
 - Portable Skill source: [Aidenwu0209/Unlimited-OCR-Skill](https://github.com/Aidenwu0209/Unlimited-OCR-Skill)
 - Cloud API: [Document Parsing (Unlimited-OCR)](https://ai.baidu.com/ai-doc/OCR/fmr1p39gb)
 
-The DSH adapter contains the portable Skill scripts plus independently implemented DSH Settings, Credentials, Tool, subprocess, and Web GUI integration. It does not redistribute the model weights or upstream SGLang wheel.
-
+The DSH adapter contains the portable Skill scripts plus independently implemented DSH Settings, Credentials, Tool, subprocess, and Web GUI integration. It does not redistribute the model weights or upstream SGLang wheel. The DSH plugin is Apache-2.0, while its independently distributable `skills/unlimited-ocr-document-parsing` bundle is additionally released under MIT-0 for ClawHub distribution.
