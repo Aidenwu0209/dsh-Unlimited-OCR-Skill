@@ -1,0 +1,5 @@
+# DSH Unlimited-OCR Skill bundle patch.
+- insert:
+    - id: unlimited-ocr-skill
+      name: dsh-unlimited-ocr-skill
+
