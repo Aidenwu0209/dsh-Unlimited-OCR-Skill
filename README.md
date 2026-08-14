@@ -17,6 +17,20 @@ A native DeepSeek Harness bundle built from [Unlimited-OCR-Skill](https://github
 
 Requires Node.js 22.19+, DeepSeek Harness, Python 3.9+, and [`uv`](https://docs.astral.sh/uv/).
 
+### One-prompt installation (easiest)
+
+Copy the entire prompt below into a terminal-capable AI agent:
+
+```text
+Install the DeepSeek Harness GUI plugin from https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill on this computer.
+1. Check Node.js 22.19+, Python 3.9+, npx, and uv. If something is missing, explain it and use its official installer. Do not use sudo or change unrelated settings without my permission.
+2. Run: npx @deepseek-ai/dsh plugin --profile web add "github:Aidenwu0209/dsh-Unlimited-OCR-Skill#main"
+3. Start npx @deepseek-ai/dsh web, wait for the actual local Web URL, and open it.
+4. Verify that Settings → Unlimited-OCR exists and shows clickable links to the official model repository, cloud API, authentication guide, and local deployment recipe.
+5. Do not invent, expose, or log any API key. Stop at provider configuration, ask me to choose Baidu Cloud or local service, and tell me exactly which values are still required.
+6. Do not claim success until the plugin command succeeds, the Web URL responds, and the Settings panel is visible. Report the commands, versions, URL, and verification result.
+```
+
 ```bash
 npx @deepseek-ai/dsh plugin --profile web add "github:Aidenwu0209/dsh-Unlimited-OCR-Skill#main"
 npx @deepseek-ai/dsh web
