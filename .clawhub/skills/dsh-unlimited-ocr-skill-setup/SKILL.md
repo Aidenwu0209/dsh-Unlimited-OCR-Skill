@@ -1,11 +1,12 @@
 ---
 name: dsh-unlimited-ocr-skill-setup
-description: Install, launch, configure, and verify the Aidenwu0209/dsh-Unlimited-OCR-Skill native DeepSeek Harness bundle. Use when a user wants Unlimited-OCR with the DSH Settings GUI, Baidu Cloud or local-provider selection, and a native parsing tool.
+description: >-
+  Install and configure the native Unlimited-OCR plugin for DeepSeek Harness (DSH) from its Settings GUI, using Baidu Cloud or a local SGLang/OpenAI-compatible service. Use for long-document OCR; PDF, OFD, Office, text, and scanned-image to Markdown; tables, formulas, and reading order; or DSH provider, credential, local inference, GUI setup, verification, and troubleshooting.
 license: MIT-0
 metadata:
   author: Aidenwu0209
   repository: https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill
-  version: "1.0.0"
+  version: "1.0.1"
   openclaw:
     emoji: "🛠️"
     homepage: https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill
@@ -15,6 +16,13 @@ metadata:
 
 Install the native DeepSeek Harness bundle. Do not present it as an OpenClaw
 code plugin; this setup skill guides installation into DSH.
+
+Use this setup skill when the request mentions **DeepSeek Harness**, **DSH**,
+the **Settings → Unlimited-OCR** GUI, **Baidu Cloud**, **SGLang**, or tasks such
+as **长文档 OCR / PDF、OFD、Office 转 Markdown / 多页扫描件 / 表格提取 /
+公式识别 / 阅读顺序**. The bundle adds a native parsing tool and GUI fields for
+provider selection, credentials, endpoints, timeouts, local inference, and
+result storage.
 
 ## Install and launch
 
