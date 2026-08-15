@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "dsh-unlimited-ocr-skill",
+  "displayName": "Unlimited OCR Skill (DSH bundle)",
+  "version": "0.2.0",
+  "description": "Portable Unlimited-OCR document parsing skill bundled with the DeepSeek Harness native plugin.",
+  "author": {
+    "name": "Aidenwu0209",
+    "url": "https://github.com/Aidenwu0209"
+  },
+  "homepage": "https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill",
+  "repository": "https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill",
+  "license": "Apache-2.0",
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "deepseek-harness",
+    "dsh-plugin",
+    "ocr",
+    "unlimited-ocr",
+    "document-parsing"
+  ]
+}

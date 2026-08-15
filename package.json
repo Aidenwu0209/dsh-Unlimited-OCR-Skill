@@ -1,6 +1,6 @@
 {
   "name": "dsh-unlimited-ocr-skill",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Unlimited-OCR long-document parsing with a native DeepSeek Harness tool and GUI configuration.",
   "keywords": [
     "deepseek-harness",
@@ -44,6 +44,7 @@
     "cordis.patch.yml",
     "README.md",
     "README.zh-CN.md",
+    "DISTRIBUTION.md",
     "UPSTREAM.md",
     "LICENSE"
   ],
@@ -117,4 +118,3 @@
   },
   "license": "Apache-2.0"
 }
-

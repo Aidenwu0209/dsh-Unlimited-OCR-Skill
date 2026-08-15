@@ -1,0 +1,28 @@
+{
+  "name": "aidenwu-dsh-skills",
+  "owner": {
+    "name": "Aidenwu0209"
+  },
+  "description": "Portable Agent Skills bundled with native DeepSeek Harness plugins.",
+  "plugins": [
+    {
+      "name": "dsh-unlimited-ocr-skill",
+      "source": "./",
+      "description": "Unlimited-OCR Agent Skill plus native DeepSeek Harness GUI and Tool integration.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Aidenwu0209"
+      },
+      "homepage": "https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill",
+      "repository": "https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill",
+      "license": "Apache-2.0",
+      "category": "productivity",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "deepseek-harness",
+        "dsh-plugin"
+      ]
+    }
+  ]
+}
