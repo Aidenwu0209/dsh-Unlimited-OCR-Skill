@@ -15,7 +15,10 @@
 
 ## 安装
 
-要求：Node.js 22.19+、DeepSeek Harness、Python 3.9+ 和 [`uv`](https://docs.astral.sh/uv/)。
+要求：Node.js `^22.19.0 || >=24.0.0`、DeepSeek Harness
+`>=0.1.0-rc.6 <0.2.0`、Python 3.9+ 和 [`uv`](https://docs.astral.sh/uv/)。
+当前 DSH 滚动窗口的精确一次性 Profile 安装、启动与卸载结果见
+[COMPATIBILITY.md](COMPATIBILITY.md)。
 
 ### 一段 Prompt 安装（最简单）
 
